@@ -1,0 +1,13 @@
+[package]
+name = "my-rust-lib"
+version = "0.1.0"
+authors = ["Etienne Batise <etienne.batise@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+# For Darwin kernel https://www.rubydoc.info/github/ffi/ffi/FFI/Platform
+crate-type=["dylib"]
+
+[dependencies]
+libc = "0.2.71"
